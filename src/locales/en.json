@@ -1,0 +1,14 @@
+{
+  "header": {
+    "company": "REX",
+    "lang": "eng",
+    "acc": "my account"
+  },
+  "routes": {
+    "home": "home",
+    "sell": "sell",
+    "host": "host",
+    "about": "about us",
+    "support": "support"
+  }
+}
