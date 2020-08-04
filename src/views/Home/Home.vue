@@ -3,34 +3,23 @@
     <div class="window_width">
       responsive block
       <div class="img">
-        <img alt="Vue logo" src="@/assets/logo.png" />
+        <!-- <img
+          alt="Vue logo"
+          src="@/assets/logo.png"
+        /> -->
       </div>
       <div>{{ WINDOW_WIDTH }}</div>
     </div>
-
-    <HelloWorld
-      v-if="WINDOW_WIDTH > 1000"
-      class="text_red"
-      msg="Адаптивный блок с шириной экрана больше 1000"
-    />
-    <HelloWorld
-      v-else-if="WINDOW_WIDTH > 500"
-      class="text_blue"
-      msg="Адаптивный блок с шириной экрана больше 500"
-    />
-    <HelloWorld v-else class="text_green" msg="Адаптивный блок" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import { mapState } from "vuex";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
   },
   computed: {
     ...mapState({
