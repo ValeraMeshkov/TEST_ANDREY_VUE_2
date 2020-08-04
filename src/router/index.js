@@ -15,21 +15,6 @@ const routes = [
     name: "About",
     component: () => import("../views/About.vue")
   },
-  {
-    path: "/animate",
-    name: "Animate",
-    component: () => import("../views/Animate.vue")
-  },
-  {
-    path: "/cars",
-    name: "Cars",
-    component: () => import("../views/Cars/Cars.vue")
-  },
-  {
-    path: "/car/:id",
-    name: "Car",
-    component: () => import("../views/Car/Car.vue")
-  }
 ];
 
 const router = new VueRouter({
