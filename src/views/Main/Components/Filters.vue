@@ -1,41 +1,66 @@
 <template>
   <div class="filters">
+    <div class="header">filters</div>
 
-    
+    <div class="content">
+      <Algorithm />
+      <Coin />
+      <Equipment />
+      <Manufacturer />
+
+      <Input
+        class="input"
+        placeholder="Minimum price"
+      />
+      <Input
+        class="input"
+        placeholder="Maximum price"
+      />
+      <Input
+        class="input"
+        placeholder="Search"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import {} from "vuex";
-
-// import Lang from "./Components/Lang.vue";
-
+import Input from '@/components/Input/Input.vue'
+import Algorithm from './Filters/Algorithm.vue'
+import Coin from './Filters/Coin.vue'
+import Equipment from './Filters/Equipment.vue'
+import Manufacturer from './Filters/Manufacturer.vue'
 
 export default {
   name: "Filters",
-  props: {
-  },
   components: {
+    Input,
+    Coin,
+    Algorithm,
+    Equipment,
+    Manufacturer,
   },
-  data() {
-    return {
-    };
-  },
-  computed: {
-  },
-  methods: {
-
-  }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/main.scss";
+@import "@/views/Main/main.scss";
 
-  @import "@/styles/main.scss";
+.filters {
+  position: relative;
+  width: 212px;
+  height: 628px;
 
-  .filters {
-    background-color: red;
-    width: 212px;
-    height: 628px;
+  .header {
+    @include main-block-header;
   }
+
+  .content {
+    @include main-block-content;
+    .input {
+      margin-top: 15px;
+    }
+  }
+}
 </style>

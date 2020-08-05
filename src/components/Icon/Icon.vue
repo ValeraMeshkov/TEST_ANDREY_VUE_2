@@ -14,7 +14,7 @@
       :class="{
         active: active && isHover
       }"
-      :src="require(`@/assets/img/icon/${icon}.svg`)"
+      :src="require(`@/assets/img/${directory}/${icon}.svg`)"
     />
   </div>
 </template>
@@ -23,6 +23,10 @@
 export default {
   name: "Icon",
   props: {
+    directory: {
+      type: String,
+      default: "icon"
+    },
     alt: {
       type: String,
       default: "img"
@@ -30,10 +34,6 @@ export default {
     icon: {
       type: String,
       default: "sync"
-    },
-    iconHover: {
-      type: String,
-      default: ""
     },
     size: {
       type: String,

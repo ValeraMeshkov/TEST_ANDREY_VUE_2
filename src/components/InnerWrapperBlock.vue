@@ -20,13 +20,14 @@ export default {
 @import "@/styles/main.scss";
 .block {
   position: absolute;
-  z-index: -1;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.1);
   @include wrapper_block;
 }
 </style>
