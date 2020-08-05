@@ -13,3 +13,30 @@ $footer-height: 100px;
   margin: 5px;
 }
 
+@mixin wrapper_block {
+  background: #000;
+  .topLeft,
+  .topRight,
+  .bottomLeft,
+  .bottomRight {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .topLeft {
+    top: 0;
+  }
+  .topRight {
+    right: 0;
+  }
+  .bottomLeft {
+    left: 0;
+    bottom: 0;
+  }
+  .bottomRight {
+    bottom: 0;
+    right: 0;
+  }
+}
+
