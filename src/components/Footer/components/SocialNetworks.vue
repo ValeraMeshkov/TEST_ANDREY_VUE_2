@@ -46,7 +46,6 @@ export default {
     position: relative;
     width: 30px;
     height: 30px;
-    background: #ffffff1a;
     mix-blend-mode: normal;
     display: flex;
     justify-content: center;

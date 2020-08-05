@@ -20,7 +20,7 @@ export default {
 @import "@/styles/main.scss";
 .block {
   position: absolute;
-  z-index: -1;
+  background-color: #ffffff1a;
   width: 100%;
   height: 100%;
   top: 0;

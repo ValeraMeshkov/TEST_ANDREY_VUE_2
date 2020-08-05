@@ -1,20 +1,22 @@
 <template>
-  <div class="new-listings">
-    
+  <div class="product-tile">
+    <InnerWrapperBlock />
+
   </div>
 </template>
 
 <script>
 import {} from "vuex";
 
-// import Lang from "./Components/Lang.vue";
+import InnerWrapperBlock from "@/components/InnerWrapperBlock";
 
 
 export default {
-  name: "NewListings",
+  name: "ProductTile",
   props: {
   },
   components: {
+    InnerWrapperBlock,
   },
   data() {
     return {
@@ -32,9 +34,10 @@ export default {
 
   @import "@/styles/main.scss";
 
-  .new-listings {
-    background-color: red;
-    width: 248px;
-    height: 747px;
+  .product-tile {
+    position: relative;
+    width: 213px;
+    height: 213px;
+    margin-bottom: 27px;
   }
 </style>

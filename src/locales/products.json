@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    },
+    {
+      "name": "USED Antminer S9 10.5-14.5 th/s",
+      "star": false,
+      "img": "@/assets/img/product_image/GPU-Enclosure.png",
+      "price": "$137.00 - $217.00",
+      "psu": false
+    }
+  ]
+}

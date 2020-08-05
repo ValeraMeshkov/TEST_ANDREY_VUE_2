@@ -50,8 +50,6 @@ export default {
 @font-face {
   font-family: "Exo-bold";
   src: url("/assets/fonts/exo/Exo-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {

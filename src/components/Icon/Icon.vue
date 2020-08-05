@@ -31,10 +31,6 @@ export default {
       type: String,
       default: "sync"
     },
-    iconHover: {
-      type: String,
-      default: ""
-    },
     size: {
       type: String,
       default: "20px"
