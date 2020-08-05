@@ -11,7 +11,7 @@
 
 export default {
 
-  name: "achievements",
+  name: "Achievements",
 };
 </script>
 
