@@ -73,7 +73,7 @@ export default {
 .menu {
   position: fixed;
   z-index: 10;
-  background: #0b0c23;
+  background: $background;
   top: 0;
   left: 0;
   right: 0;
@@ -81,7 +81,7 @@ export default {
   opacity: 0.98;
 
   .buttons {
-    color: #fff;
+    color: $white;;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ export default {
       margin-top: 100px;
     }
     .name {
-      color: #fff;
+      color: $white;;
       text-decoration: none;
       cursor: pointer;
       margin-top: 50px;

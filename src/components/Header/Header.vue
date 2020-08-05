@@ -1,78 +1,122 @@
 <template>
-  <div id="nav">
+  <div class="nav">
+
     <div class="left">
-      <button>{{lang.company}}</button>
-      <button @click="changeLang('en')">en</button>
-      <button @click="changeLang('ru')">ru</button>
+      <img
+        class="logo-rex"
+        src="@/assets/img/logo/logo-rex.svg"
+        alt="logo-rex"
+      />
+      <Lang />
     </div>
 
     <div class="center">
-      <button @click="openMenu">open</button>
-      <Menu
-        v-if="isOpenMenu"
-        @close="isOpenMenu = false"
+      <img
+        class="hamburger-open"
+        src="@/assets/img/icon/hamburger-open.svg"
+        alt="hamburger-open"
+        @click="openMenu"
       />
+      <Menu v-if="isOpenMenu" @close="isOpenMenu = false" />
     </div>
 
     <div class="right">
-
-      <button>мой</button>
-      <button>кошелек</button>
-      <button>колокол</button>
-      <button>корзина</button>
+      <MyAccount />
+      <img
+        src="@/assets/img/icon/delimeter-vertically.svg"
+        alt="delimeter-vertically"
+      />
+      <Balance />
+      <img
+        src="@/assets/img/icon/delimeter-vertically.svg"
+        alt="delimeter-vertically"
+      />
+      <Bell />  
+      <img
+        src="@/assets/img/icon/delimeter-vertically.svg"
+        alt="delimeter-vertically"
+      />
+      <Cart />
     </div>
-
   </div>
 </template>
 
 <script>
 import { mapState, mapActions } from "vuex";
 
-import Menu from './Components/Menu.vue'
+import Lang from "./Components/Lang.vue";
+import Menu from "./Components/Menu.vue";
+import Bell from "./Components/Bell.vue";
+import Balance from "./Components/Balance.vue";
+import MyAccount from "./Components/MyAccount.vue";
+import Cart from "./Components/Cart.vue";
 
 export default {
   name: "Header",
   props: {
-    msg: String
+    msg: String,
   },
   components: {
-    Menu
+    Lang,
+    Menu,
+    Bell,
+    Balance,
+    MyAccount,
+    Cart,
   },
-  data () {
+  data() {
     return {
-      isOpenMenu: false
-    }
+      isOpenMenu: false,
+    };
   },
   computed: {
     ...mapState({
-      lang: state => state.lang.header,
+      lang: (state) => state.lang.header,
     }),
   },
   methods: {
     ...mapActions({
-      changeLang: "changeLang"
+      changeLang: "changeLang",
     }),
-    openMenu () {
-      this.isOpenMenu = true
+    openMenu() {
+      this.isOpenMenu = true;
     },
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
 
-#nav {
-  padding: 30px;
-  border-bottom: 1px solid black;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.nav {
+  height: 88px;
+  width: 1440px;
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    margin: -5px 0 0 32px;
+    width: 163px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .center {
+    margin-left: 146px;
+    margin-top: -3px;
+    .hamburger-open {
+      cursor: pointer;
     }
+  }
+  .right {
+    width: 312px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 28px;
+    margin-top: -12px;
+    color: $white;
   }
 }
 </style>
