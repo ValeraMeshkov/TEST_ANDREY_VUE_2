@@ -1,25 +1,26 @@
 <template>
   <div id="app">
-    <Header class="header" />
-
+    <Header />
+    <Main />
+    <Footer />
     <div class="wrapper">
       <div class="content">
         <router-view />
       </div>
-
-      <Footer class="footer" />
     </div>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header/Header.vue";
-import Footer from "@/components/Footer.vue";
+import Main from "@/views/Main/Main.vue";
+import Footer from "@/components/Footer/Footer.vue";
 import { mapActions } from "vuex";
 
 export default {
   components: {
     Header,
+    Main,
     Footer
   },
   mounted () {
@@ -59,36 +60,7 @@ body {
   color: #2c3e50;
   display: flex;
   flex-direction: column;
-
-  .header {
-    height: $header-height;
-    box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-  }
-
-  .wrapper {
-    position: fixed;
-    top: $header-height;
-    width: 100%;
-    height: calc(100vh - #{$header-height});
-    box-sizing: border-box;
-    overflow-y: auto;
-
-    .content {
-      position: relative;
-      min-height: calc(100vh - #{$footer-height} - #{$header-height});
-      box-sizing: border-box;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .footer {
-      position: relative;
-      height: $footer-height;
-      box-sizing: border-box;
-      width: 100%;
-    }
-  }
+  align-items: center;
+  // background-color: #0B0C23;
 }
 </style>
