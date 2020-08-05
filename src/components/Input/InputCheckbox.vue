@@ -1,12 +1,20 @@
 <template>
   <div class="input-block">
-
     <input
-      class="input"
-      type="text"
-      v-model="input"
-      :placeholder="placeholder"
+      type="checkbox"
+      :id="placeholder"
+      :name="placeholder"
+      v-model="checkbox"
     >
+    <label
+      :class="{
+        active: value
+      }"
+      :for="placeholder"
+    >
+      {{placeholder}}
+    </label>
+
     <InnerWrapperBlock />
 
   </div>
@@ -27,8 +35,8 @@ export default {
   },
   props: {
     value: {
-      type: String,
-      default: ""
+      type: Boolean,
+      default: true
     },
     placeholder: {
       type: String,
@@ -36,12 +44,12 @@ export default {
     }
   },
   computed: {
-    input: {
+    checkbox: {
       get () {
         return this.value;
       },
       set (val) {
-        this.$emit("input", val);
+        this.$emit("checkbox", val);
       }
     }
   }
@@ -54,22 +62,32 @@ export default {
   position: relative;
   width: 100%;
   height: 30px;
-  z-index: 2;
+
   input {
-    background: rgba(11, 12, 35, 0.4);
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    z-index: 1;
-    color: #c4c4c4;
-    border: none;
+    display: block;
+    display: flex;
+    align-items: center;
     font-family: Open Sans;
+    justify-content: center;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 10px;
+    color: #c4c4c4;
+    cursor: pointer;
+    background: none;
+    border: none;
   }
-  input:focus {
-    outline: none;
+
+  .active {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgb(1, 1, 26);
   }
 }
 </style>
