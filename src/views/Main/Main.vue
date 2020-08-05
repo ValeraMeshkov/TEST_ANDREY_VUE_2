@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import {} from "vuex";
+import { } from "vuex";
 
 import Filters from "./Components/Filters.vue";
 import NewListings from "./Components/NewListings.vue";
@@ -26,7 +26,7 @@ export default {
     News,
     OnSale,
   },
-  data() {
+  data () {
     return {
     };
   },
@@ -39,15 +39,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/main.scss";
 
-  @import "@/styles/main.scss";
-
-  .main {
-    background-color: $background;
-    width: 1440px;
-    height: 910px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.main {
+  padding-top: 100px;
+  background-color: $background;
+  width: 1440px;
+  height: 910px;
+  display: flex;
+  justify-content: space-around;
+}
 </style>
