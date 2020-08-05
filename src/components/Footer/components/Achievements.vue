@@ -14,7 +14,7 @@
 import Icon from '@/components/Icon/Icon.vue'
 
 export default {
-  name: "achievements",
+  name: "Achievements",
   components: {
     Icon
   },
