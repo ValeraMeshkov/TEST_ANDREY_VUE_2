@@ -1,30 +1,56 @@
-<template>  
-  <div class="my-account">
-    <img src="@/assets/img/icon/user.svg" alt="user" />
+<template>
+  <div
+    class="account"
+    @mouseover="active = true"
+    @mouseleave="active = false"
+    :class="{
+      active: active
+    }"
+  >
+    <Icon
+      :isHover="false"
+      icon="user"
+      alt="user"
+    />
     <div>MY ACCOUNT</div>
-    <img
-      src="@/assets/img/icon/pixel-arrow-down.svg"
+    <Icon
+      :isHover="false"
+      icon="pixel-arrow-down"
       alt="pixel-arrow-down"
+      size="12px"
     />
   </div>
 </template>
 
 <script>
-  export default {
-    name: "MyAccount",
-  };
+import Icon from '@/components/Icon/Icon.vue'
+
+export default {
+  name: "MyAccount",
+  components: {
+    Icon
+  },
+  data () {
+    return {
+      active: false
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/main.scss";
 
-  @import "@/styles/main.scss";
-
-   .my-account {
-    width: 134px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 48px;
-    cursor: pointer;
-  }
+.account {
+  width: 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 48px;
+  cursor: pointer;
+}
+.active {
+  opacity: 0.7;
+}
 </style>

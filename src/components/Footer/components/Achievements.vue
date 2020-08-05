@@ -1,28 +1,38 @@
 <template>
   <div class="achievements">
-      <img src="@/assets/img/icon/achievment-gold.svg" alt="achievment-gold">
-      <img src="@/assets/img/icon/achievment-silver.svg" alt="achievment-silver">
-      <img src="@/assets/img/icon/achievment-platinum.svg" alt="achievment-platinum">
-      <img src="@/assets/img/icon/achievment-bronze.svg" alt="achievment-bronze">
+    <Icon
+      v-for="n in icons"
+      :key="n"
+      :icon="`achievment-${n}`"
+      alt="`achievment-${n}`"
+      size="30px"
+    />
   </div>
 </template>
 
 <script>
+import Icon from '@/components/Icon/Icon.vue'
 
 export default {
-
   name: "Achievements",
+  components: {
+    Icon
+  },
+  data () {
+    return {
+      icons: ['gold', 'silver', 'platinum', 'bronze']
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/main.scss";
 
-  @import "@/styles/main.scss";
-
-  .achievements {
-    width: 167px;
-    margin-right: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
+.achievements {
+  width: 167px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
 </style>

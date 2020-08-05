@@ -47,13 +47,63 @@ export default {
 <style lang="scss">
 @import "@/styles/main.scss";
 
+@font-face {
+  font-family: "Exo-bold";
+  src: url("/assets/fonts/exo/Exo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo-medium";
+  src: url("/assets/fonts/exo/Exo-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo-regular";
+  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.woff")
+      format("font-woff"),
+    url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.svg") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "OpenSans-bold";
+  src: url("/assets/fonts/open_sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-light";
+  src: url("/assets/fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-regular";
+  src: url("/assets/fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-semiBold";
+  src: url("/assets/fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Exo-regular", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

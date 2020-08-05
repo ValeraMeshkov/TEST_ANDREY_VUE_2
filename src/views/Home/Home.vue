@@ -1,25 +1,25 @@
 <template>
   <div class="home">
     <div class="window_width">
-      responsive block
-      <div class="img">
-        <!-- <img
-          alt="Vue logo"
-          src="@/assets/logo.png"
-        /> -->
+
+      <div class="wrapper_block">
+        <InnerWrapperBlock />
+        responsive block
       </div>
+
       <div>{{ WINDOW_WIDTH }}</div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import { mapState } from "vuex";
+import InnerWrapperBlock from '@/components/InnerWrapperBlock.vue'
 
 export default {
   name: "Home",
   components: {
+    InnerWrapperBlock
   },
   computed: {
     ...mapState({
@@ -30,6 +30,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/main.scss";
+
+.wrapper_block {
+  position: relative;
+  padding: 10px;
+}
 .home {
   display: flex;
   flex-direction: column;

@@ -4,19 +4,26 @@
     <div class="rating-decription-stars">
       <div class="rating-decription">Great service and prices!</div>
       <div class="rating-stars">
-        <img src="@/assets/img/icon/star.svg" alt="star" />
-        <img src="@/assets/img/icon/star.svg" alt="star" />
-        <img src="@/assets/img/icon/star.svg" alt="star" />
-        <img src="@/assets/img/icon/star.svg" alt="star" />
-        <img src="@/assets/img/icon/star.svg" alt="star" />
+        <Icon
+          v-for="n in 5"
+          :key="n"
+          icon="star"
+          alt="star"
+          size="10px"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Icon from '@/components/Icon/Icon.vue'
+
 export default {
-  name: "Review"
+  name: "Review",
+  components: {
+    Icon
+  }
 };
 </script>
 
@@ -33,8 +40,8 @@ export default {
     font-size: 30px;
     line-height: 48px;
     color: $white;
-    font-family: 'Exo-regular';
-    }
+    font-family: "Exo-regular";
+  }
   .rating-decription-stars {
     display: flex;
     height: 24px;

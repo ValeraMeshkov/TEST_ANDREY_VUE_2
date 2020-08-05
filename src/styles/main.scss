@@ -3,56 +3,6 @@
   padding: 0;
 }
 
-  // @font-face {
-  //   font-family: "Exo-bold";
-  //   src: url('/assets/fonts/exo/Exo-Bold.ttf') format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
-  // @font-face {
-  //   font-family: "Exo-medium";
-  //   src: url('/assets/fonts/exo/Exo-Medium.ttf') format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
-  @font-face {
-    font-family: "Exo-regular";
-    src: url('/src/assets/fonts/exo/Exo-Regular/Exo-Regular.eot'); /* IE9 Compat Modes */
-    src: url('/src/assets/fonts/exo/Exo-Regular/Exo-Regular.woff') format('font-woff'), /* Pretty Modern Browsers */
-        //  url('/src/assets/fonts/exo/Exo-Regular/Exo-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/src/assets/fonts/exo/Exo-Regular/Exo-Regular.svg') format('svg'); /* Legacy iOS */
-  }
-
-  // @font-face {
-  //   font-family: "OpenSans-bold";
-  //   src: url("/assets/fonts/open_sans/OpenSans-Bold.ttf") format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
-  // @font-face {
-  //   font-family: "OpenSans-light";
-  //   src: url("/assets/fonts/open_sans/OpenSans-Light.ttf") format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
-  // @font-face {
-  //   font-family: "OpenSans-regular";
-  //   src: url("/assets/fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
-  // @font-face {
-  //   font-family: "OpenSans-semiBold";
-  //   src: url("/assets/fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-
 // Цвета для проекта
 $background: #0b0c23;
 $white: #ffffff;
@@ -66,4 +16,30 @@ $footer-height: 100px;
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
+}
+
+@mixin wrapper_block {
+  .topLeft,
+  .topRight,
+  .bottomLeft,
+  .bottomRight {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .topLeft {
+    top: 0;
+  }
+  .topRight {
+    right: 0;
+  }
+  .bottomLeft {
+    left: 0;
+    bottom: 0;
+  }
+  .bottomRight {
+    bottom: 0;
+    right: 0;
+  }
 }

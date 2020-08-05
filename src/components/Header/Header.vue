@@ -11,45 +11,60 @@
     </div>
 
     <div class="center">
-      <img
-        class="hamburger-open"
-        src="@/assets/img/icon/hamburger-open.svg"
+      <Icon
+        icon="hamburger-open"
         alt="hamburger-open"
+        size="25px"
         @click="openMenu"
       />
-      <Menu v-if="isOpenMenu" @close="isOpenMenu = false" />
+      <Menu
+        v-if="isOpenMenu"
+        @close="isOpenMenu = false"
+      />
     </div>
 
     <div class="right">
       <MyAccount />
-      <img
-        src="@/assets/img/icon/delimeter-vertically.svg"
-        alt="delimeter-vertically"
+      <Icon
+        class="dots"
+        :isHover="false"
+        size="15px"
+        icon="delimeter-vertically"
       />
-      <Balance />
-      <img
-        src="@/assets/img/icon/delimeter-vertically.svg"
-        alt="delimeter-vertically"
+      <Icon
+        icon="balance"
+        alt="balance"
       />
-      <Bell />  
-      <img
-        src="@/assets/img/icon/delimeter-vertically.svg"
-        alt="delimeter-vertically"
+      <Icon
+        size="15px"
+        :isHover="false"
+        class="dots"
+        icon="delimeter-vertically"
       />
-      <Cart />
+      <Icon
+        icon="bell"
+        alt="bell"
+      />
+      <Icon
+        size="15px"
+        :isHover="false"
+        class="dots"
+        icon="delimeter-vertically"
+      />
+      <Icon
+        icon="basket"
+        alt="basket"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import { mapState, mapActions } from "vuex";
-
+import Icon from '@/components/Icon/Icon.vue'
 import Lang from "./Components/Lang.vue";
 import Menu from "./Components/Menu.vue";
-import Bell from "./Components/Bell.vue";
-import Balance from "./Components/Balance.vue";
 import MyAccount from "./Components/MyAccount.vue";
-import Cart from "./Components/Cart.vue";
 
 export default {
   name: "Header",
@@ -59,12 +74,10 @@ export default {
   components: {
     Lang,
     Menu,
-    Bell,
-    Balance,
     MyAccount,
-    Cart,
+    Icon
   },
-  data() {
+  data () {
     return {
       isOpenMenu: false,
     };
@@ -78,7 +91,7 @@ export default {
     ...mapActions({
       changeLang: "changeLang",
     }),
-    openMenu() {
+    openMenu () {
       this.isOpenMenu = true;
     },
   },
@@ -100,20 +113,17 @@ export default {
     width: 163px;
     display: flex;
     justify-content: space-between;
-    
   }
   .center {
     margin-left: 146px;
     margin-top: -3px;
-    .hamburger-open {
-      cursor: pointer;
-    }
   }
   .right {
     width: 312px;
     height: 48px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-right: 28px;
     margin-top: -12px;
     color: $white;

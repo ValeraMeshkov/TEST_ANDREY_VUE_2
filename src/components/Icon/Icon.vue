@@ -11,10 +11,11 @@
     }"
   >
     <img
-      v-if="active"
-      :src="require(`@/assets/ic-${iconHover ? iconHover : icon}.svg`)"
+      :class="{
+        active: active && isHover
+      }"
+      :src="require(`@/assets/img/icon/${icon}.svg`)"
     />
-    <img v-else :src="require(`@/assets/ic-${icon}.svg`)" />
   </div>
 </template>
 
@@ -36,14 +37,18 @@ export default {
     },
     size: {
       type: String,
-      default: "25px"
+      default: "20px"
     },
     padding: {
       type: String,
       default: "0px"
+    },
+    isHover: {
+      type: Boolean,
+      default: true
     }
   },
-  data() {
+  data () {
     return {
       active: false
     };
@@ -57,11 +62,13 @@ export default {
   cursor: pointer;
   display: flex;
   box-sizing: border-box;
-
   img {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+  }
+  .active {
+    opacity: 0.7;
   }
 }
 </style>
