@@ -1,6 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 // Цвета для проекта
-$dark: #000000;
-$light: #ffffff;
+$background: #0b0c23;
+$white: #ffffff;
 
 $header-height: 100px;
 $footer-height: 100px;
@@ -14,7 +19,6 @@ $footer-height: 100px;
 }
 
 @mixin wrapper_block {
-  background: #000;
   .topLeft,
   .topRight,
   .bottomLeft,
@@ -39,4 +43,3 @@ $footer-height: 100px;
     right: 0;
   }
 }
-

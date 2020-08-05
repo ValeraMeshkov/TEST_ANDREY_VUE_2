@@ -1,25 +1,26 @@
 <template>
   <div id="app">
-    <Header class="header" />
-
+    <Header />
+    <Main />
+    <Footer />
     <div class="wrapper">
       <div class="content">
         <router-view />
       </div>
-
-      <Footer class="footer" />
     </div>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header/Header.vue";
-import Footer from "@/components/Footer.vue";
+import Main from "@/views/Main/Main.vue";
+import Footer from "@/components/Footer/Footer.vue";
 import { mapActions } from "vuex";
 
 export default {
   components: {
     Header,
+    Main,
     Footer
   },
   mounted () {
@@ -46,49 +47,70 @@ export default {
 <style lang="scss">
 @import "@/styles/main.scss";
 
+@font-face {
+  font-family: "Exo-bold";
+  src: url("/assets/fonts/exo/Exo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo-medium";
+  src: url("/assets/fonts/exo/Exo-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo-regular";
+  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.woff")
+      format("font-woff"),
+    url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.svg") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "OpenSans-bold";
+  src: url("/assets/fonts/open_sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-light";
+  src: url("/assets/fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-regular";
+  src: url("/assets/fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-semiBold";
+  src: url("/assets/fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Exo-regular", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   display: flex;
   flex-direction: column;
-
-  .header {
-    height: $header-height;
-    box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-  }
-
-  .wrapper {
-    position: fixed;
-    top: $header-height;
-    width: 100%;
-    height: calc(100vh - #{$header-height});
-    box-sizing: border-box;
-    overflow-y: auto;
-
-    .content {
-      position: relative;
-      min-height: calc(100vh - #{$footer-height} - #{$header-height});
-      box-sizing: border-box;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .footer {
-      position: relative;
-      height: $footer-height;
-      box-sizing: border-box;
-      width: 100%;
-    }
-  }
+  align-items: center;
+  // background-color: #0B0C23;
 }
 </style>
