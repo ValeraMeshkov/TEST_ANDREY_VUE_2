@@ -1,7 +1,7 @@
 <template>
   <div
     @mouseover="active = true"
-    @mouseleave="active = false"
+    @mouseleave="isActive === true ? active = true : active = false"
     @click.stop="$emit('click')"
     class="icon"
     :style="{
@@ -12,7 +12,8 @@
   >
     <img
       :class="{
-        active: active && isHover
+        active: active && isHover,
+        pointer: cursorPointer,
       }"
       :src="require(`@/assets/img/${directory}/${icon}.svg`)"
     />
@@ -46,11 +47,19 @@ export default {
     isHover: {
       type: Boolean,
       default: true
+    },
+    isActive: {
+      type: Boolean,
+      default: false
+    },
+    cursorPointer: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
     return {
-      active: false
+      active: this.isActive
     };
   }
 };
@@ -59,16 +68,19 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
 .icon {
-  cursor: pointer;
   display: flex;
   box-sizing: border-box;
   img {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    opacity: 0.7;
   }
   .active {
-    opacity: 0.7;
+    opacity: 1;
+  }
+  .pointer {
+    cursor: pointer;
   }
 }
 </style>

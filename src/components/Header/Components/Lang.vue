@@ -9,7 +9,8 @@
     @click.capture="changeLang(lang)"
   >
     <Icon
-      :isHover="false"
+      :isHover="true"
+      :isActive="true"
       icon="planet-earth"
       alt="planet-earth"
       size="23px"
@@ -29,12 +30,11 @@ export default {
   },
   data () {
     return {
-      active: false
     };
   },
   computed: {
     ...mapState({
-      lang: (state) => state.lang.header.lang,
+      lang: state => state.lang.header.lang,
     }),
   },
   methods: {
@@ -47,9 +47,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
-.active {
-  opacity: 0.7;
-}
 .lang {
   width: 62px;
   display: flex;

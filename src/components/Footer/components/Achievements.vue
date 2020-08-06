@@ -4,8 +4,11 @@
       v-for="n in icons"
       :key="n"
       :icon="`achievment-${n}`"
-      alt="`achievment-${n}`"
+      :alt="`achievment-${n}`"
       size="30px"
+      :isHover="true"
+      :isActive="true"
+      :cursorPointer="false"
     />
   </div>
 </template>

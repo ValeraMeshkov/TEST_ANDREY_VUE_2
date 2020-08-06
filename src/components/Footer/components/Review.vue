@@ -10,6 +10,9 @@
           icon="star"
           alt="star"
           size="10px"
+          :isHover="true"
+          :isActive="true"
+          :cursorPointer="false"
         />
       </div>
     </div>

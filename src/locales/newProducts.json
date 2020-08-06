@@ -1,0 +1,254 @@
+{
+  "products": [
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale" : "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "8 cards",
+      "star": false,
+      "img": "GPU-Enclosure8.png",
+      "price": "$550.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon T3",
+      "characteristic": "43 th/s",
+      "star": false,
+      "img": "Innosilicon-T3.png",
+      "price": "$2461.00",
+      "sale": "",
+      "preOrder": true,
+      "psu": false
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6-2.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": false
+    }
+  ]
+}

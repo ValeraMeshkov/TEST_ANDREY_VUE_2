@@ -55,6 +55,7 @@ export default {
   font-size: 14px;
   line-height: 48px;
   cursor: pointer;
+  opacity: 0.7;
   .text {
     text-transform: uppercase;
     padding: 3px 5px 0;
@@ -62,6 +63,6 @@ export default {
   }
 }
 .active {
-  opacity: 0.7;
+  opacity: 1;
 }
 </style>

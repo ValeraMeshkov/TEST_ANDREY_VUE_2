@@ -8,4 +8,7 @@ export default {
   setChangeLang (state, value) {
     state.lang = value;
   },
+  setProducts(state, value) {
+    state.products = value;
+  },
 };

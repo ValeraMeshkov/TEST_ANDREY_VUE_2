@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <Filters />
-    <NewListings />
     <OnSale />
+    <NewListings />
     <News />
   </div>
 </template>

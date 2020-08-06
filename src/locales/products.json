@@ -1,0 +1,504 @@
+{
+  "products": [
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale" : "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "USED Antminer S9",
+      "characteristic": "10.5-14.5 th/s",
+      "star": true,
+      "img": "USED-Antminer-S9.png",
+      "price": "$137.00 - $217.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "GPU Enclosure",
+      "characteristic": "12 cards",
+      "star": false,
+      "img": "12.png",
+      "price": "$650.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Antminer DR5",
+      "characteristic": "35 Th/s",
+      "star": false,
+      "img": "Antminer-DR5.png",
+      "price": "$1385.00",
+      "sale": "",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "Innosilicon A6",
+      "characteristic": "1.23 GH/s",
+      "star": false,
+      "img": "Innosilicon-A6.png",
+      "price": "$3450.00",
+      "sale": "$3240.00",
+      "preOrder": false,
+      "psu": true
+    },
+    {
+      "name": "PandaMiner B3 Pro 4g",
+      "characteristic": "230 Mh/s",
+      "star": false,
+      "img": "PandaMiner-B3.png",
+      "price": "$2352.00",
+      "sale": "$2209.00",
+      "preOrder": false,
+      "psu": true
+    }
+  ]
+}
