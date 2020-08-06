@@ -10,21 +10,22 @@
 
       <Input
         class="input"
-        placeholder="Minimum price"
+        :placeholder="lang.minPrice"
       />
       <Input
         class="input"
-        placeholder="Maximum price"
+        :placeholder="lang.maxPrice"
       />
       <Input
         class="input"
-        placeholder="Search"
+        :placeholder="lang.search"
       />
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Input from '@/components/Input/Input.vue'
 import Algorithm from './Filters/Algorithm.vue'
 import Coin from './Filters/Coin.vue'
@@ -39,6 +40,11 @@ export default {
     Algorithm,
     Equipment,
     Manufacturer,
+  },
+  computed: {
+    ...mapState({
+      lang: (state) => state.lang.main.filters.inputs,
+    }),
   },
 };
 </script>
@@ -60,6 +66,9 @@ export default {
     @include main-block-content;
     .input {
       margin-top: 15px;
+      ::placeholder {
+        text-transform: capitalize;
+      }
     }
   }
 }

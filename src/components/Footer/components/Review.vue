@@ -2,7 +2,7 @@
   <div class="review">
     <div class="rating">4.9</div>
     <div class="rating-decription-stars">
-      <div class="rating-decription">Great service and prices!</div>
+      <div class="rating-decription">{{lang}}</div>
       <div class="rating-stars">
         <Icon
           v-for="n in 5"
@@ -17,13 +17,19 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Icon from '@/components/Icon/Icon.vue'
 
 export default {
   name: "Review",
   components: {
     Icon
-  }
+  },
+  computed: {
+    ...mapState({
+      lang: (state) => state.lang.footer.sign,
+    }),
+  },
 };
 </script>
 
@@ -33,18 +39,20 @@ export default {
 .review {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 188px;
+  width: 220px;
   margin-left: 30px;
+
   .rating {
     font-size: 30px;
     line-height: 48px;
     color: $white;
     font-family: "Exo-regular";
   }
+
   .rating-decription-stars {
+    margin-left: 10px;
     display: flex;
-    height: 24px;
+    height: 30px;
     flex-direction: column;
     justify-content: center;
     margin-right: 11px;

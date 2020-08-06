@@ -12,7 +12,7 @@
       icon="user"
       alt="user"
     />
-    <div>MY ACCOUNT</div>
+    <div class="text">{{lang}}</div>
     <Icon
       :isHover="false"
       icon="pixel-arrow-down"
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Icon from '@/components/Icon/Icon.vue'
 
 export default {
@@ -34,7 +35,12 @@ export default {
     return {
       active: false
     };
-  }
+  },
+  computed: {
+    ...mapState({
+      lang: (state) => state.lang.header.acc,
+    }),
+  },
 };
 </script>
 
@@ -42,13 +48,18 @@ export default {
 @import "@/styles/main.scss";
 
 .account {
-  width: 134px;
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
   line-height: 48px;
   cursor: pointer;
+  .text {
+    text-transform: uppercase;
+    padding: 3px 5px 0;
+    font-family: "Exo-bold", sans-serif;
+  }
 }
 .active {
   opacity: 0.7;

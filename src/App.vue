@@ -1,26 +1,23 @@
 <template>
   <div id="app">
     <Header />
-    <Main />
-    <Footer />
     <div class="wrapper">
       <div class="content">
         <router-view />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header/Header.vue";
-import Main from "@/views/Main/Main.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import { mapActions } from "vuex";
 
 export default {
   components: {
     Header,
-    Main,
     Footer
   },
   mounted () {
@@ -49,57 +46,45 @@ export default {
 
 @font-face {
   font-family: "Exo-bold";
-  src: url("/assets/fonts/exo/Exo-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/exo/Exo-Bold.ttf");
 }
 
 @font-face {
   font-family: "Exo-medium";
-  src: url("/assets/fonts/exo/Exo-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/exo/Exo-Medium.ttf");
 }
 
 @font-face {
   font-family: "Exo-regular";
-  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.eot"); /* IE9 Compat Modes */
-  src: url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.woff")
-      format("font-woff"),
-    url("/src/assets/fonts/exo/Exo-Regular/Exo-Regular.svg") format("svg"); /* Legacy iOS */
+  src: url("~@/assets/fonts/exo/Exo-Regular.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-bold";
-  src: url("/assets/fonts/open_sans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/open_sans/OpenSans-Bold.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-light";
-  src: url("/assets/fonts/open_sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/open_sans/OpenSans-Light.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-regular";
-  src: url("/assets/fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/open_sans/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-semiBold";
-  src: url("/assets/fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("~@/assets/fonts/open_sans/OpenSans-SemiBold.ttf");
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #0b0c23;
 }
 
 #app {
@@ -111,6 +96,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: #0B0C23;
+  user-select: none;
+  height: 100%;
+  color: #fff;
+  .wrapper {
+    height: calc(100% - 170px);
+  }
 }
 </style>

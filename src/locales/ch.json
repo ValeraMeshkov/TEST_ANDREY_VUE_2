@@ -1,0 +1,37 @@
+{
+  "header": {
+    "company": "REX",
+    "lang": "ch",
+    "acc": "我的帳戶"
+  },
+  "footer": {
+    "sign": "優質的服務和價格！"
+  },
+  "routes": {
+    "home": "家",
+    "sell": "賣",
+    "host": "主機",
+    "about": "關於我們",
+    "support": "支持"
+  },
+  "main": {
+    "filters": {
+      "header": "過濾器",
+      "algorithm": "按算法",
+      "coin": "按硬幣",
+      "equipment": "按設備",
+      "manufacturer": {
+        "name": "由製造商",
+        "AMD": "AMD",
+        "boundary": "Boundary",
+        "pandaminer": "Pandaminer",
+        "nvidia": "Nvidia"
+      },
+      "inputs": {
+        "minPrice": "最低價格",
+        "maxPrice": "最高價格",
+        "search": "搜索"
+      }
+    }
+  }
+}
