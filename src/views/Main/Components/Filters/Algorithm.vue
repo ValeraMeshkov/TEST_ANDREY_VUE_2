@@ -2,7 +2,7 @@
   <div class="algorithm">
     <ButtonDropDown
       class="dropdown"
-      text="By Algorithm"
+      :text="lang"
       :isOpen="filter.isOpen"
       @open="openFilters('algorithm')"
     />
@@ -21,6 +21,7 @@ export default {
   computed: {
     ...mapState({
       filter: (state) => state.main.filters.algorithm,
+      lang: (state) => state.lang.main.filters.algorithm,
     }),
   },
   methods: {
@@ -37,5 +38,8 @@ export default {
 
 .algorithm {
   margin-top: 15px;
+  .dropdown {
+    text-transform: capitalize;
+  }
 }
 </style>

@@ -1,0 +1,37 @@
+{
+    "header": {
+        "company": "REX",
+        "lang": "de",
+        "acc": "mein Konto"
+    },
+    "footer": {
+        "sign": "Toller Service und Preise!"
+    },
+    "routes": {
+        "home": "zu hause",
+        "sell": "verkaufen",
+        "host": "host",
+        "about": "über uns",
+        "support": "support"
+    },
+    "main": {
+        "filters": {
+            "header": "filter",
+            "algorithm": "Nach Algorithmus",
+            "coin": "Mit Münze",
+            "equipment": "Nach Ausrüstung",
+            "manufacturer": {
+                "name": "Nach Hersteller",
+                "AMD": "AMD",
+                "boundary": "Grenze",
+                "pandaminer": "Pandaminer",
+                "nvidia": "Nvidia"
+            },
+            "inputs": {
+                "minPrice": "Mindestpreis",
+                "maxPrice": "Maximaler Preis",
+                "search": "Suche"
+            }
+        }
+    }
+}

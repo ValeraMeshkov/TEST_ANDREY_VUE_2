@@ -1,6 +1,12 @@
 <template>
   <div
     class="lang"
+    @mouseover="active = true"
+    @mouseleave="active = false"
+    :class="{
+      active: active
+    }"
+    @click.capture="changeLang(lang)"
   >
     <Icon
       :isHover="true"
@@ -9,12 +15,12 @@
       alt="planet-earth"
       size="23px"
     />
-    <span @click="changeLang('en')">ENG</span>
-    <!-- <button @click="changeLang('ru')">ru</button> -->
+    <span>{{lang}}</span>
   </div>
 </template>
 
 <script>
+import { mapState, mapActions } from "vuex";
 import Icon from '@/components/Icon/Icon.vue'
 
 export default {
@@ -25,6 +31,16 @@ export default {
   data () {
     return {
     };
+  },
+  computed: {
+    ...mapState({
+      lang: (state) => state.lang.header.lang,
+    }),
+  },
+  methods: {
+    ...mapActions({
+      changeLang: "changeLang",
+    }),
   }
 };
 </script>
@@ -34,13 +50,15 @@ export default {
 .lang {
   width: 62px;
   display: flex;
-  justify-content: space-between;
+  font-family: "Exo-bold";
+  text-transform: uppercase;
   align-items: center;
   cursor: pointer;
   span {
     font-size: 14px;
     line-height: 48px;
     color: $white;
+    margin-left: 10px;
   }
 }
 </style>

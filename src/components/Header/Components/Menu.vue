@@ -15,14 +15,14 @@
 
       <div
         class="name"
-        @click="routerTo('/about')"
+        @click="routerTo('/sell')"
       >{{lang.sell}}</div>
 
       <div class="dots">...</div>
 
       <div
         class="name"
-        @click="routerTo('/about')"
+        @click="routerTo('/host')"
       >{{lang.host}}</div>
 
       <div class="dots">...</div>
@@ -36,7 +36,7 @@
 
       <div
         class="name"
-        @click="routerTo('/about')"
+        @click="routerTo('/support')"
       >{{lang.support}}</div>
     </div>
   </div>
@@ -81,7 +81,7 @@ export default {
   opacity: 0.98;
 
   .buttons {
-    color: $white;;
+    color: $white;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ export default {
       margin-top: 100px;
     }
     .name {
-      color: $white;;
+      color: $white;
       text-decoration: none;
       cursor: pointer;
       margin-top: 50px;

@@ -4,11 +4,34 @@
     "lang": "ru",
     "acc": "мой аккаунт"
   },
+  "footer": {
+    "sign": "Отличный сервис и цены!"
+  },
   "routes": {
     "home": "домой",
     "sell": "продажа",
     "host": "создатель",
     "about": "о нас",
     "support": "поддержка"
+  },
+  "main": {
+    "filters": {
+      "header": "Фильтры",
+      "algorithm": "По алгоритму",
+      "coin": "По цену",
+      "equipment": "По оборудованию",
+      "manufacturer": {
+        "name": "Производитель",
+        "AMD": "AMD",
+        "boundary": "Boundary",
+        "pandaminer": "Pandaminer",
+        "nvidia": "Nvidia"
+      },
+      "inputs": {
+        "minPrice": "Минимальная цена",
+        "maxPrice": "Максимальная цена",
+        "search": "Поиск"
+      }
+    }
   }
 }

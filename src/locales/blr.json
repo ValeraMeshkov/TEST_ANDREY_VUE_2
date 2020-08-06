@@ -1,0 +1,37 @@
+{
+  "header": {
+    "company": "REX",
+    "lang": "blr",
+    "acc": "мой рахунак"
+  },
+  "footer": {
+    "sign": "Выдатны сэрвіс і цэны!"
+  },
+  "routes": {
+    "home": "дадому",
+    "sell": "продаж",
+    "host": "стваральнік",
+    "about": "пра нас",
+    "support": "падтрымка"
+  },
+  "main": {
+    "filters": {
+      "header": "фільтры",
+      "algorithm": "па алгарытме",
+      "coin": "па цану",
+      "equipment": "па абсталяванні",
+      "manufacturer": {
+        "name": "вытворца",
+        "AMD": "AMD",
+        "boundary": "Boundary",
+        "pandaminer": "Pandaminer",
+        "nvidia": "Nvidia"
+      },
+      "inputs": {
+        "minPrice": "мінімальны кошт",
+        "maxPrice": "максімальная цана",
+        "search": "пошук"
+      }
+    }
+  }
+}
