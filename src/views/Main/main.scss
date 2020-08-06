@@ -1,12 +1,10 @@
 @mixin main-block-header {
   text-align: left;
   text-transform: uppercase;
-  font-family: Exo;
-  font-style: normal;
-  font-weight: 500;
   font-size: 24px;
   line-height: 48px;
   color: #FFFFFF;
+  font-family: "Exo-medium";
 }
 
 @mixin main-block-content {

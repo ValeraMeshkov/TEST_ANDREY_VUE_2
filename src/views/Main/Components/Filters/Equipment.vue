@@ -2,7 +2,7 @@
   <div class="equipment">
     <ButtonDropDown
       class="dropdown"
-      text="By Equipment"
+      :text="lang"
       :isOpen="filter.isOpen"
       @open="openFilters('equipment')"
     />
@@ -21,6 +21,7 @@ export default {
   computed: {
     ...mapState({
       filter: (state) => state.main.filters.equipment,
+      lang: (state) => state.lang.main.filters.equipment,
     }),
   },
   methods: {
@@ -37,5 +38,8 @@ export default {
 
 .equipment {
   margin-top: 15px;
+  .dropdown {
+    text-transform: capitalize;
+  }
 }
 </style>

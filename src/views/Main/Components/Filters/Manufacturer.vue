@@ -2,7 +2,7 @@
   <div class="manufacturer">
     <ButtonDropDown
       class="dropdown"
-      text="By Manufacturer"
+      :text="lang.name"
       :isOpen="filter.isOpen"
       @open="openFilters('manufacturer')"
     />
@@ -14,13 +14,13 @@
       <InputCheckbox
         @checkbox="changeCheckboxAMD"
         class="radio"
-        placeholder="AMD"
+        :placeholder="lang.AMD"
         :value="checkbox.AMD"
       />
       <InputCheckbox
         @checkbox="changeCheckboxBoundary"
         class="radio"
-        placeholder="Boundary Electric"
+        :placeholder="lang.boundary"
         :value="checkbox.Boundary"
       />
     </div>
@@ -32,13 +32,13 @@
       <InputCheckbox
         @checkbox="changeCheckboxPandaminer"
         class="radio"
-        placeholder="Pandaminer"
+        :placeholder="lang.pandaminer"
         :value="checkbox.Pandaminer"
       />
       <InputCheckbox
         @checkbox="changeCheckboxNvidia"
         class="radio"
-        placeholder="Nvidia"
+        :placeholder="lang.nvidia"
         :value="checkbox.Nvidia"
       />
     </div>
@@ -61,7 +61,8 @@ export default {
   computed: {
     ...mapState({
       filter: (state) => state.main.filters.manufacturer,
-      checkbox: (state) => state.main.filters.manufacturer.checkboxes
+      checkbox: (state) => state.main.filters.manufacturer.checkboxes,
+      lang: (state) => state.lang.main.filters.manufacturer
     }),
   },
   methods: {
@@ -91,6 +92,7 @@ export default {
 .manufacturer {
   .dropdown {
     margin-top: 15px;
+    text-transform: capitalize;
   }
 
   .radios {

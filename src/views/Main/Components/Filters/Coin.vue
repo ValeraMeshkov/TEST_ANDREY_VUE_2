@@ -2,7 +2,7 @@
   <div class="coins">
     <ButtonDropDown
       class="dropdown"
-      text="By Coin"
+      :text="lang"
       :isOpen="filter.isOpen"
       @open="openFilters('coin')"
     />
@@ -11,8 +11,8 @@
       v-if="filter.isOpen"
     >
       <div
-        v-for="item in coins"
-        :key="item"
+        v-for="(item,index) in coins"
+        :key="index"
         class="item"
       >
         <InnerWrapperBlock />
@@ -24,9 +24,7 @@
           :icon="item"
           directory="coins"
         />
-
         <div class="text">{{item}}</div>
-
       </div>
     </div>
   </div>
@@ -48,6 +46,7 @@ export default {
   computed: {
     ...mapState({
       filter: (state) => state.main.filters.coin,
+      lang: (state) => state.lang.main.filters.coin
     }),
   },
   data () {
@@ -69,6 +68,10 @@ export default {
 
 .coins {
   margin-top: 15px;
+
+  .dropdown {
+    text-transform: capitalize;
+  }
   .items {
     display: flex;
     justify-content: space-between;
