@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     ...mapState({
-      lang: (state) => state.lang.header.lang,
+      lang: state => state.lang.header.lang,
     }),
   },
   methods: {

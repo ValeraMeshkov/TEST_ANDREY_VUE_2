@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
       <div class="content">
         <router-view />
-      </div>
+      <!-- </div> -->
     </div>
     <Footer />
   </div>
@@ -82,9 +82,9 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden;
-  background: #0b0c23;
+  // height: 100vh;
+  // overflow: hidden;
+  // background-color: #0B0C23;
 }
 
 #app {
@@ -97,14 +97,10 @@ body {
   flex-direction: column;
   align-items: center;
   user-select: none;
-<<<<<<< HEAD
-  // background-color: #0B0C23;
-=======
-  height: 100%;
-  color: #fff;
-  .wrapper {
-    height: calc(100% - 170px);
-  }
->>>>>>> a151ba40e5f532a58fc21237fe2758ad90320431
+  // height: 100%;
+  // color: #fff;
+  // .wrapper {
+  //   height: calc(100% - 170px);
+  // }
 }
 </style>
