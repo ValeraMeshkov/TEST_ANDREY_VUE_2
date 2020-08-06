@@ -10,6 +10,9 @@
           icon="star"
           alt="star"
           size="10px"
+          :isHover="true"
+          :isActive="true"
+          :cursorPointer="false"
         />
       </div>
     </div>
@@ -17,7 +20,7 @@
 </template>
 
 <script>
-import Icon from '@/components/Icon/Icon.vue'
+import Icon from "@/components/Icon/Icon.vue";
 
 export default {
   name: "Review",

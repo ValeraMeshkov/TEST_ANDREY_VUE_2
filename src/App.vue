@@ -109,6 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  user-select: none;
   // background-color: #0B0C23;
 }
 </style>

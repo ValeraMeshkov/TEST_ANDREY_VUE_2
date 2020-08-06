@@ -6,6 +6,9 @@
       :icon="`achievment-${n}`"
       :alt="`achievment-${n}`"
       size="30px"
+      :isHover="true"
+      :isActive="true"
+      :cursorPointer="false"
     />
   </div>
 </template>

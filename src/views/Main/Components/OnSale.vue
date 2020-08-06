@@ -1,11 +1,19 @@
 <template>
   <div class="on-sale">
-    <header>
+    <div class="header">
       <h2>ON SALE</h2>
-      <div class="view"></div>
-    </header>
+      <div class="display">
+        <div class="change-display">
+          <div class="view">View</div>
+          <div class="name">Grid</div>
+        </div>
+        <img class="combined" src="@/assets/img/icon/combined.svg" alt="combined" />
+        <img src="@/assets/img/icon/delimeter-vertically.svg" alt="delimeter-vertically" />
+      </div>
+    </div>
+    <div class="scroll"></div>
     <div class="products">
-      <ProductTile v-for="(item, i) in products" :key="i" />
+      <ProductTile v-for="(item, i) in products" :key="i" :product="item" />
     </div>
   </div>
 </template>
@@ -35,20 +43,42 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
+@import "@/views/Main/main.scss";
 
 .on-sale {
   width: 491px;
   height: 747px;
-  header {
+  user-select: none;
+  .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
     h2 {
-      font-family: Exo-medium;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 48px;
-      color: #ffffff;
+      @include main-block-header;
+      margin-left: 35px;
+    }
+    .display {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 92px;
+      .change-display {
+        display: flex;
+        justify-content: space-between;
+        font-family: Exo;
+        font-size: 10px;
+        line-height: 48px;
+        .view {
+          color: #c4c4c4;
+          margin-right: 7px;
+        }
+        .name {
+          color: #ffffff;
+        }
+      }
+      .combined {
+        cursor: pointer;
+      }
     }
   }
   .products {
@@ -59,37 +89,28 @@ export default {
     justify-content: space-between;
     overflow-y: scroll;
     direction: rtl;
+    padding-left: 30px;
   }
-  ::-webkit-scrollbar-button {
-    background-image: url("");
-    background-repeat: no-repeat;
-    width: 5px;
-    height: 0px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #ecedee;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-color: #6dc0c8;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #56999f;
-  }
-
-  ::-webkit-resizer {
-    background-image: url("");
-    background-repeat: no-repeat;
-    width: 4px;
-    height: 0px;
+  .scroll {
+    position: absolute;
+    width: 2px;
+    height: 699px;
+    background: #ffffff;
+    opacity: 0.2;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-left: 2px;
   }
 
   ::-webkit-scrollbar {
-    width: 4px;
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
   }
 }
 </style>

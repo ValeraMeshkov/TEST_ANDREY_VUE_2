@@ -49,8 +49,9 @@ export default {
   font-size: 14px;
   line-height: 48px;
   cursor: pointer;
+  opacity: 0.7;
 }
 .active {
-  opacity: 0.7;
+  opacity: 1;
 }
 </style>

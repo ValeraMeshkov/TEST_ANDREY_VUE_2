@@ -1,14 +1,10 @@
 <template>
   <div
     class="lang"
-    @mouseover="active = true"
-    @mouseleave="active = false"
-    :class="{
-      active: active
-    }"
   >
     <Icon
-      :isHover="false"
+      :isHover="true"
+      :isActive="true"
       icon="planet-earth"
       alt="planet-earth"
       size="23px"
@@ -28,7 +24,6 @@ export default {
   },
   data () {
     return {
-      active: false
     };
   }
 };
@@ -36,9 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
-.active {
-  opacity: 0.7;
-}
 .lang {
   width: 62px;
   display: flex;
